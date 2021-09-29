@@ -1,0 +1,53 @@
+.card {
+}
+
+.card__list {
+  list-style: none;
+  padding: 0;
+}
+
+.card__day {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.card__date {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.card__icon {
+  width: 62px;
+  height: 43px;
+  margin: 30px 0 25px 0;
+}
+
+.card__temperature {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.card__temperature_value {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 33px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.card__weather {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.4);
+}

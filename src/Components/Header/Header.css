@@ -1,0 +1,87 @@
+.header {
+  background: linear-gradient(180deg, #15143d 0%, #3f3d7d 100%);
+  height: 404px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__list-loaction {
+  margin: 0;
+  padding: 36px 0 0 41px;
+  list-style: none;
+}
+
+.header__list-loaction_item {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 29px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header__list-loaction_item:nth-of-type(1) {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 67px;
+  color: #ffffff;
+  margin-bottom: 9px;
+}
+
+.header__list-loaction_item:nth-of-type(2) {
+  margin-bottom: 2px;
+}
+
+.header_change-city {
+  position: absolute;
+  right: 43px;
+  top: 56px;
+  align-content: flex-end;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 29px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  margin: 67px 0 0 32px;
+}
+
+.header__list-forecast {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__list-forecast_item {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header__list-forecast_value {
+  color: #ffffff;
+}
+
+.header__container_temperature {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 133px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.header__container_icon {
+  width: 82px;
+  margin: 0 33px 0 13px;
+  height: 56px;
+}
