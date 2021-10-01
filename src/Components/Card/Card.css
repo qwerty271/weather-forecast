@@ -1,9 +1,9 @@
-.card {
-}
-
 .card__list {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card__day {
@@ -24,7 +24,7 @@
 
 .card__icon {
   width: 62px;
-  height: 43px;
+  height: 62px;
   margin: 30px 0 25px 0;
 }
 
