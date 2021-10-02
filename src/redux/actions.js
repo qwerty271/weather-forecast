@@ -7,7 +7,7 @@ export const weatherForecast = (city) => {
 
     axios
       .get(
-        `http://api.weatherapi.com/v1/forecast.json?key=9b2d23e001b4416f900151137212909&days=10&aqi=no&alerts=no&lang=ru&q=${city}`
+        `https://api.weatherapi.com/v1/forecast.json?key=9b2d23e001b4416f900151137212909&days=10&aqi=no&alerts=no&lang=ru&q=${city}`
       )
       .then((res) => {
         dispatch(getWeather(res.data));
