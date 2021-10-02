@@ -1,6 +1,8 @@
 import React from "react";
 import "./Header.css";
 import { connect } from "react-redux";
+import { useDispatch } from "react-redux";
+import { weatherForecast } from "../../redux/actions";
 
 function Header(props) {
   const days = [
@@ -13,6 +15,17 @@ function Header(props) {
     "Суббота",
   ];
   const day = new Date().getDay();
+  const [popupVisible, setPopupVisible] = React.useState(false);
+  const dispatch = useDispatch();
+
+  function changeCity() {
+    setPopupVisible(true);
+  }
+
+  function chooseCity(city) {
+    dispatch(weatherForecast(city));
+    setPopupVisible(false);
+  }
 
   return (
     <header className="header">
@@ -33,7 +46,9 @@ function Header(props) {
             : ""}
         </li>
       </ul>
-      <p className="header_change-city">Выбрать город</p>
+      <p className="header_change-city" onClick={changeCity}>
+        Выбрать город
+      </p>
       <div className="header__container">
         <p className="header__container_temperature">
           {Object.keys(props.data).length !== 0
@@ -86,6 +101,22 @@ function Header(props) {
           </li>
         </ul>
       </div>
+      <section className={`popup ${popupVisible ? "popup_active" : ""}`}>
+        <ul className="popup__list">
+          <li
+            className="popup__list_item"
+            onClick={() => chooseCity("togliatti")}
+          >
+            Тольятти
+          </li>
+          <li className="popup__list_item" onClick={() => chooseCity("moscow")}>
+            Москва
+          </li>
+          <li className="popup__list_item" onClick={() => chooseCity("samara")}>
+            Самара
+          </li>
+        </ul>
+      </section>
     </header>
   );
 }

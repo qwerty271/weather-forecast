@@ -46,6 +46,10 @@
   margin: 0;
 }
 
+.header_change-city:hover {
+  cursor: pointer;
+}
+
 .header__container {
   display: flex;
   align-items: center;
@@ -84,4 +88,33 @@
   width: 82px;
   margin: 0 33px 0 13px;
   height: 82px;
+}
+
+.popup {
+  width: 150px;
+  position: fixed;
+  visibility: hidden;
+}
+
+.popup_active {
+  position: absolute;
+  visibility: visible;
+  right: 43px;
+  top: 100px;
+}
+
+.popup__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.popup__list_item {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.popup__list_item:hover {
+  cursor: pointer;
 }
